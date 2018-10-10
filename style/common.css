@@ -1,0 +1,105 @@
+.footer{
+	width: 100%;
+	min-width: 960px;
+	height: 192px;
+	
+	background-color: #232323;
+}
+
+.footer .foot-contain{
+	width: 960px;
+	min-width: 960px;
+	margin: 0 auto;
+	height: 192px;
+	position: relative;
+}
+
+.footer .email{
+	position: absolute;
+	top: 46px;
+	left: 60px;
+	display: inline-block;
+	width: 167px;
+	height: 108px;
+	
+}
+
+.footer p, a{
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+	letter-spacing: 1px;
+	margin: 9px 0;
+}
+
+.footer .email input{
+	width: 167px;
+	height: 30px;
+}
+
+
+.footer .help{
+	left: 302px;
+	top: 45px;
+	position: absolute;
+	width: 73px;
+	height: 115px;
+}
+
+.footer .help .number{
+	letter-spacing: 0px;
+}
+
+
+.footer .my{
+	position: absolute;
+	width: 95px;
+	height: 98px;
+	left: 448px;
+	top: 45px;
+}
+
+.footer .about{
+	position: absolute;
+	top: 45px;
+	left: 608px;
+	width: 280px;
+	height: 69px;
+}
+
+.footer .about .links{
+	text-align: center;
+	margin-top: 20px;
+}
+
+.footer .about .links img{
+	height: 22px;
+	margin-left: 12px;
+}
+
+.footer .about .links .youtube img{
+	height: 27px;
+	margin-left: 9px;
+}
+
+.footer .about .links .icnop img{
+	height: 27px;
+	margin-left: 9px;
+}
+
+/*版权信息*/
+.copyright{
+	width: 960px;
+	min-width: 960px;
+	margin: 0 auto;
+	height: 160px;
+	padding: 40px 0px;
+}
+
+.copyright p{
+	text-align: center;
+	font-size: 7px;
+	letter-spacing: 2px;
+	line-height: 25px;
+	/*font-weight: bold;*/
+}

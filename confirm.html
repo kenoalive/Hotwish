@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" name="viewport" content="width=device-width"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="style/reset.css">
+	<link rel="stylesheet" href="style/common.css" />
+	<link rel="stylesheet" href="style/confirm.css" />
+	<link rel="stylesheet" href="style/header.css" />
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/account.js"></script>
+	<title>确认订单</title>
+</head>
+<body>
+	<!-- 顶部条 -->
+	<div class="header">
+		<div class="container clearfix">
+			<div class="left clearfix">
+				<a href="">
+					<div class="back">
+						返回首页
+					</div>
+				</a>
+			</div>
+			<div class="right clearfix">
+				<p>您好</p>
+				<p id="username"><a href="">mimic</a></p>
+				<p><a href="">[退出]</a></p>
+				<p><a href="">我的订单</a></p>
+				<p><a href="">会员俱乐部<span></span></a></p>
+				<p><a href="">客户服务<span></span></a></p>
+				<p><a href="" class="phone">手机版</a></p>
+				<p><a href="">更多<span></span></a></p>
+			</div>
+		</div>
+	</div>
+	<!-- 导航 -->
+	<div class="navbar">
+		<div class="container">
+			<!-- logo部分 -->
+			<div class="logo">
+				<img src="images/logo2.jpg" alt="logo">
+			</div>
+			<!-- 导航栏 -->
+			<!-- <div class="nav">
+				<a href="">我的订单</a>
+			</div> -->
+		</div>
+	</div>
+
+	<div class="order-content container">
+		<div class="order-form">
+			<div class="order-tit">
+				<span>其他操作</span>
+				<span>实付款</span>
+				<span>单价</span>
+			</div>
+			<div class="order-con">
+				<ul id="itemContainer">
+					<li>
+						<div class="buttom ">
+							<div class="model-info bor">
+								<div class="icon"><a href=""><img src="images/icno0-01.png" alt=""></a></div>
+								<div class="model-name ">网红名</div>
+							</div>
+							<div class="price bor">
+								<div class="price-num">￥2078</div>
+								<div class="serve-date">
+									<p>服务时间</p>
+									<p>2017/8/30</p>
+								</div>
+							</div>
+
+							<div class="payment bor">
+								<div class="payment-num">￥2800</div>
+							</div>
+							<div class="delete"><p>删除订单</p></div>
+						</div>
+					</li>
+					<li>
+						<div class="buttom ">
+							<div class="model-info bor">
+								<div class="icon"><a href=""><img src="images/icno0-01.png" alt=""></a></div>
+								<div class="model-name ">网红名</div>
+							</div>
+							<div class="price bor">
+								<div class="price-num">￥2078</div>
+								<div class="serve-date">
+									<p>服务时间</p>
+									<p>2017/8/30</p>
+								</div>
+							</div>
+
+							<div class="payment bor">
+								<div class="payment-num">￥1800</div>
+							</div>
+							<div class="delete"><p>删除订单</p></div>
+						</div>
+					</li>
+					<li>
+
+						<div class="buttom ">
+							<div class="model-info bor">
+								<div class="icon"><a href=""><img src="images/icno0-01.png" alt=""></a></div>
+								<div class="model-name ">网红名</div>
+							</div>
+							<div class="price bor">
+								<div class="price-num">￥2078</div>
+								<div class="serve-date">
+									<p>服务时间</p>
+									<p>2017/8/30</p>
+								</div>
+							</div>
+
+							<div class="payment bor">
+								<div class="payment-num">￥1400</div>
+							</div>
+							<div class="delete"><p>删除订单</p></div>
+						</div>
+					</li>
+				</ul>
+
+			</div>
+			<div class="page">
+				<div class="holder">
+				</div>
+			</div>
+		</div>
+		<div class="settle-box">
+			<div class="remarks">
+				<p>备注：</p>
+				<textarea name="remarks" id="remarks" placeholder="请备注您的订单详细服务内容"></textarea>
+			</div>
+			<div class="total-account">
+				<p class="fl">总金额</p>
+				<div class="account fr" id="account">
+					
+				</div>
+			</div>
+			<a href="">
+				<div class="pay">
+					立即结算
+				</div>
+			</a>
+			
+		</div>
+	</div>
+	<div class="footer" id="footer">
+		<div class="foot-contain">
+			<div class="email">
+				<p>电子邮箱注册</p>
+
+				<input type="text" name="email" id="email" placeholder="电子邮箱地址">
+				<p style="text-indent: 6px">欢迎您注册哦！</p>
+			</div>
+			<div class="help">
+				<p><a href="">帮助</a></p>
+				<p><a href="">客服服务</a></p>
+				<p><a href="">在线聊天</a></p>
+				<p><a href="" class="number">098237619</a></p>
+			</div>
+			<div class="my">
+				<p><a href="">我的</a></p>
+				<p><a href="">你的个人中心</a></p>
+				<p><a href="">订单状态</a></p>
+			</div>
+			<div class="about">
+				<p><a href="">关于</a></p>
+				<div class="links">
+					<a href=""><img src="images/icon/facebook.png" alt=""></a>
+					<a href=""><img src="images/icon/twitter.png" alt=""></a>
+					<a href="" class="youtube"><img src="images/icon/youtube.png" alt=""></a>
+					<a href="" class="icnop"><img src="images/icon/icnop_01.png" alt=""></a>
+					<a href=""><img src="images/icon/ins.png" alt=""></a>
+					<a href=""><img src="images/icon/vk.png" alt=""></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="copyright">
+
+		<p>Copyright @ 2017-2020 hotwish.com. All Rights Reserved 使用本网站即表示接受Hotwish协议。 版权所有 安徽慧场科技有限公司</p>
+		<p>皖公安网备 44010302111111号 皖ICP备08114786号 ICP经营许可证：皖E2-20080329 网络文化经营许可证：皖网文[2017] 1528-299</p>
+		<p>自营主体经营证照 风险监测信息</p>
+	</div>
+	
+</body>
+</html>

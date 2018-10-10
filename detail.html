@@ -1,0 +1,517 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" name="viewport" content="width=device-width"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="style/reset.css">
+	<link rel="stylesheet" href="style/detail.css" />
+	<link rel="stylesheet" href="style/common.css" />
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/detail.js"></script>
+	<script src="js/layer/layer.js"></script>
+	<title>详情页</title>
+</head>
+<body>
+	<!-- 顶部 -->
+	<div class="header">
+		<div class="container clearfix">
+				<div class="left clearfix">
+					<p>欢迎来Hotwish</p>
+					<p id="login"><a href="">请登录</a></p>
+					<p id="register"><a href="">免费注册</a></p>
+				</div>
+				<div class="right clearfix">
+					<p><a href="">我的订单</a></p>
+					<p><a href="">会员俱乐部<span></span></a></p>
+					<p><a href="">客户服务<span></span></a></p>
+					<p><a href="" class="phone">手机版</a></p>
+					<p><a href="">更多<span></span></a></p>
+				</div>
+		</div>
+	</div>
+	<!-- 导航 -->
+	<div class="navbar">
+		<div class="container">
+			<!-- logo部分 -->
+			<div class="logo">
+				<img src="images/logo2.jpg" alt="logo">
+			</div>
+		</div>
+	</div>
+	<!-- 商品详情 -->
+	<div class="detail-con container">
+		<div class="location">
+			<span><a href="">首页</a></span>&gt;
+			<span><a href="">网红列表</a></span>&gt;
+			<span>小野猫-喵喵</span>
+		</div>
+		<div class="detail-box clearfix">
+			<!-- 左侧图片详情 -->
+			<div class="left-area">
+				<!-- 大图 -->
+				<div class="big-img">
+					<img src="images/d-img1-big.png" alt="" />
+				</div>
+				<!-- 小图 -->
+				<div class="small-img">
+					<ul>
+						<li class="selected"><img src="images/d-img1-small.png" alt="" big="images/d-img1-big.png"/></li>
+						<li><img src="images/d-img2-small.png" big="images/d-img2-big.png" alt="" /></li>
+						<li><img src="images/d-img3-small.png" big="images/d-img3-big.png" alt="" /></li>
+					</ul>
+				</div>
+			</div>
+			<!-- 右侧商品详情 -->
+			<div class="right-area">
+				<div class="shop-name">
+					小野猫——喵喵
+				</div>
+				<div class="d-container">
+					<div class="price-box">
+						<a href="">
+							<div class="cut">
+								会员优惠券通用
+							</div>
+						</a>
+						<span><a href="">去抢券&gt;</a></span>
+						<div class="price-con">
+							<div class="left">
+								<span class="price">$2000.00</span>
+								<span>价格:&nbsp;&nbsp;</span>
+							</div>
+							<div class="right">
+								<div class="comment">
+								<hr />
+									<span class="number">22</span>
+									<span>累计评价</span>
+								</div>
+
+								<div class="amout">
+									
+									<span class="number">202</span>
+									<span>交易成功</span>
+								</div>
+							</div>
+						</div>
+						<div class="sm-info clearfix">
+							<p>送20wish币</p>
+							<p class="fr">允许拼单</p>
+							<p class="fr">限时折扣</p>
+							<p class="fr">网红活动</p>
+						</div>
+					</div>
+					<!-- 选择表单 -->
+					<form class="model-options" id="model-options" action="" method="">
+						<div class="service-tit tit">选择服务</div>
+						<div class="options service-options clearfix" id="service-options">
+							<ul class="clearfix">
+								<li class="selected">平面拍摄</li>
+								<li>视频录制</li>
+								<li>直播</li>
+								<li>社群推广</li>
+								<li>服务二级属性</li>
+								<li>服务二级属性</li>
+							</ul>
+						</div>
+						<div class="service-time tit">选择服务时间</div>
+						<div class="options time-options clearfix">
+							<ul class="clearfix" id="time-options">
+								<li class="" >时间只可连续选择&nbsp;&nbsp;一小时起步</li>
+
+							</ul>
+							<!-- 时间选择面板 -->
+							<div class="time-options-panel">
+								<div class="date-options">
+									<div class="arrowleft arrowleft-disab"></div>
+									<div class="slide-date" id="slide-date">
+										<ul>
+											<!-- <li class="selected">7.20</li> -->
+											
+										</ul>
+									</div>
+									<div class="arrowright arrowright-ab"></div>
+								</div>
+								<div class="Dayshow">
+									
+								</div>
+								<div class="single-time-options">
+									<ul class="clearfix">
+										<li class="disabled "><p>08:00</p></li>
+										<li class="enabled">09:00</li>
+										<li class="disabled">10:00</li>
+										<li class="disabled">11:00</li>
+										<li class="enabled">12:00</li>
+										<li class="enabled">13:00</li>
+										<li class="disabled">14:00</li>
+										<li class="enabled">15:00</li>
+										<li class="disabled">16:00</li>
+										<li class="enabled">17:00</li>
+										<li class="disabled">18:00</li>
+										<li class="disabled">19:00</li>
+									</ul>
+								</div>
+								<div class="time-confirm active" id="time-confirm">
+									确定
+								</div>
+							</div>
+						</div>
+						<div class="service-tit tit">拼单</div>
+						<div class="options merge-options clearfix" id="merge-options">
+							<ul class="clearfix">
+								<li class="selected">是</li>
+								<li>否</li>
+							</ul>
+						</div>
+						<div class="options type-options clearfix" id="type-options">
+							<ul class="clearfix">
+								<li class="selected">服装</li>
+								<li>鞋类</li>
+								<li>箱包</li>
+							</ul>
+						</div>
+					</form>
+					<div class="merge-links">
+						可拼单链接
+					</div>
+					<div class="confirm" id="confirm">
+						立即购买
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<!-- 切换导航 -->
+	<div class="info-nav">
+		<div class="container">
+			<ul class="nav-list">
+				<li class="active">网红详情</li>
+				<li>网红服务</li>
+				<li>预定须知</li>
+				<li>累计评价</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 网红信息tab切换 -->
+	<div class="tab-container">
+		<!-- 网红详情 -->
+		<div class="tab info-panel clearfix">
+			<div class="info-text clearfix">
+				<p>姓名：小野猫</p>
+				<p>身高：178</p>
+				<p>体重：48kg</p>
+				<p>三围：88/52/90</p>
+				<p>鞋码：40</p>
+				<p>发型：中长发</p>
+			</div>
+			<div class="model-pic-header">
+				<p>网红详情</p>
+				<hr />
+			</div>
+			<div class="model-pic-box">
+				
+				<div class="model-pic-con clearfix">
+					<ul class="clearfix">
+						<li><img src="images/d_03.png" alt="" /></li>
+						<li><img src="images/d_05.png" alt="" /></li>
+						<li><img src="images/d_08.png" alt="" /></li>
+						<li><img src="images/d_10.png" alt="" /></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- 网红服务 -->
+		<div class="tab "></div>
+		<!-- 预定须知 -->
+		<div class="tab "></div>
+		<!-- 累计评价 -->
+		<div class="tab comment-box">
+			<!-- 整体评价 -->
+			<div class="total-comment">
+				<p>整体评价</p>
+				<div class="score">5.0</div>
+				<div class="stars">
+					<ul>
+						<li><img src="images/commentstar_03.png" alt="" /> </li>
+						<li><img src="images/commentstar_03.png" alt="" /> </li>
+						<li><img src="images/commentstar_03.png" alt="" /> </li>
+						<li><img src="images/commentstar_03.png" alt="" /> </li>
+						<li><img src="images/commentstar_03.png" alt="" /> </li>
+
+					</ul>
+				</div>
+			</div>
+			<div class="comment-line">
+				<div class="line level" id="level">
+					<p>专业程度&nbsp;&nbsp;</p>
+					<span class="color"></span>
+					<span class="grey"></span>
+					<p class="c-score">98</p><p>%</p>
+				</div>
+				<div class="line attitude" id="attitude">
+					<p>专业程度&nbsp;&nbsp;</p>
+					<span class="color"></span>
+					<span class="grey"></span>
+					<p class="c-score">98</p><p>%</p>
+				</div>
+
+			</div>
+			<div class="comment-block">
+				<div class="com-detail">
+					很美（21）
+				</div>
+				<div class="com-detail">
+					人很好（21）
+				</div>
+				<div class="com-detail">
+					加油（21）
+				</div>
+				<div class="com-detail">
+					满意（21）
+				</div>
+				<div class="com-detail">
+					很美（21）
+				</div>
+				<div class="com-detail">
+					满意（21）
+				</div>
+				<div class="com-detail">
+					很美（21）
+				</div>
+				<div class="com-detail">
+					满意（21）
+				</div>
+				<div class="com-detail">
+					很美（21）
+				</div>
+
+			</div>
+
+			<div class="model-pic-header">
+				<p>累计评价</p>
+
+				<hr />
+			</div>
+			<!-- 评价列表 -->
+			<div class="user-comment">
+				<div class="user-c-d">
+					<div class="icno-area">
+						<img src="images/2-01.png" alt="" />
+						<p  id=username>默默会会员</p>
+					</div>
+					<div class="com-area">
+						<div class="star-area">
+							<p>评分：</p>
+							<div class="stars clearfix">
+								<ul>
+									<li><img src="images/commentstar_03.png" alt="" /> </li>
+									<li><img src="images/commentstar_03.png" alt="" /> </li>
+									<li><img src="images/commentstar_03.png" alt="" /> </li>
+									<li><img src="images/commentstar_03.png" alt="" /> </li>
+									<li><img src="images/commentstar_03.png" alt="" /> </li>
+
+								</ul>
+							</div>
+						</div>
+						<div class="com-text">
+							模特很专业，各种换衣服，气质很好
+						</div>
+						<div class="time-area">
+							<span>2017-08-08</span><span>19:55:26</span>
+							<div class="type">平面拍摄</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="user-c-d">
+					<div class="icno-area">
+						<img src="images/2-01.png" alt="" />
+						<p  id=username>默默会会员</p>
+					</div>
+					<div class="com-area">
+						<div class="star-area">
+							<p>评分：</p>
+							<div class="stars clearfix">
+								<ul>
+									<li><img src="images/commentstar_03.png" alt="" /> </li>
+									<li><img src="images/commentstar_03.png" alt="" /> </li>
+									<li><img src="images/commentstar_03.png" alt="" /> </li>
+									<li><img src="images/commentstar_03.png" alt="" /> </li>
+									<li><img src="images/commentstar_03.png" alt="" /> </li>
+
+								</ul>
+							</div>
+						</div>
+						<div class="com-text">
+							模特很专业，各种换衣服，气质很好
+						</div>
+						<div class="time-area">
+							<span>2017-08-08</span><span>19:55:26</span>
+							<div class="type">平面拍摄</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="user-c-d">
+					<div class="icno-area">
+						<img src="images/2-01.png" alt="" />
+						<p  id=username>默默会会员</p>
+					</div>
+					<div class="com-area">
+						<div class="star-area">
+							<p>评分：</p>
+							<div class="stars clearfix">
+								<ul>
+									<li><img src="images/commentstar_03.png" alt="" /> </li>
+									<li><img src="images/commentstar_03.png" alt="" /> </li>
+									<li><img src="images/commentstar_03.png" alt="" /> </li>
+									<li><img src="images/commentstar_03.png" alt="" /> </li>
+									<li><img src="images/commentstar_03.png" alt="" /> </li>
+
+								</ul>
+							</div>
+						</div>
+						<div class="com-text">
+							模特很专业，各种换衣服，气质很好
+						</div>
+						<div class="time-area">
+							<span>2017-08-08</span><span>19:55:26</span>
+							<div class="type">平面拍摄</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="user-c-d">
+					<div class="icno-area">
+						<img src="images/2-01.png" alt="" />
+						<p  id=username>默默会会员</p>
+					</div>
+					<div class="com-area">
+						<div class="star-area">
+							<p>评分：</p>
+							<div class="stars clearfix">
+								<ul>
+									<li><img src="images/commentstar_03.png" alt="" /> </li>
+									<li><img src="images/commentstar_03.png" alt="" /> </li>
+									<li><img src="images/commentstar_03.png" alt="" /> </li>
+									<li><img src="images/commentstar_03.png" alt="" /> </li>
+									<li><img src="images/commentstar_03.png" alt="" /> </li>
+
+								</ul>
+							</div>
+						</div>
+						<div class="com-text">
+							模特很专业，各种换衣服，气质很好
+						</div>
+						<div class="time-area">
+							<span>2017-08-08</span><span>19:55:26</span>
+							<div class="type">平面拍摄</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="user-c-d">
+					<div class="icno-area">
+						<img src="images/2-01.png" alt="" />
+						<p  id=username>默默会会员</p>
+					</div>
+					<div class="com-area">
+						<div class="star-area">
+							<p>评分：</p>
+							<div class="stars clearfix">
+								<ul>
+									<li><img src="images/commentstar_03.png" alt="" /> </li>
+									<li><img src="images/commentstar_03.png" alt="" /> </li>
+									<li><img src="images/commentstar_03.png" alt="" /> </li>
+									<li><img src="images/commentstar_03.png" alt="" /> </li>
+									<li><img src="images/commentstar_03.png" alt="" /> </li>
+
+								</ul>
+							</div>
+						</div>
+						<div class="com-text">
+							模特很专业，各种换衣服，气质很好
+						</div>
+						<div class="time-area">
+							<span>2017-08-08</span><span>19:55:26</span>
+							<div class="type">平面拍摄</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="user-c-d">
+					<div class="icno-area">
+						<img src="images/2-01.png" alt="" />
+						<p  id=username>默默会会员</p>
+					</div>
+					<div class="com-area">
+						<div class="star-area">
+							<p>评分：</p>
+							<div class="stars clearfix">
+								<ul>
+									<li><img src="images/commentstar_03.png" alt="" /> </li>
+									<li><img src="images/commentstar_03.png" alt="" /> </li>
+									<li><img src="images/commentstar_03.png" alt="" /> </li>
+									<li><img src="images/commentstar_03.png" alt="" /> </li>
+									<li><img src="images/commentstar_03.png" alt="" /> </li>
+
+								</ul>
+							</div>
+						</div>
+						<div class="com-text">
+							模特很专业，各种换衣服，气质很好
+						</div>
+						<div class="time-area">
+							<span>2017-08-08</span><span>19:55:26</span>
+							<div class="type">平面拍摄</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- foot -->
+	<div class="footer" id="footer">
+		<div class="foot-contain">
+			<div class="email">
+				<p>电子邮箱注册</p>
+
+				<input type="text" name="email" id="email" placeholder="电子邮箱地址">
+				<p style="text-indent: 6px">欢迎您注册哦！</p>
+			</div>
+			<div class="help">
+				<p><a href="">帮助</a></p>
+				<p><a href="">客服服务</a></p>
+				<p><a href="">在线聊天</a></p>
+				<p><a href="" class="number">098237619</a></p>
+			</div>
+			<div class="my">
+				<p><a href="">我的</a></p>
+				<p><a href="">你的个人中心</a></p>
+				<p><a href="">订单状态</a></p>
+			</div>
+			<div class="about">
+				<p><a href="">关于</a></p>
+				<div class="links">
+					<a href=""><img src="images/icon/facebook.png" alt=""></a>
+					<a href=""><img src="images/icon/twitter.png" alt=""></a>
+					<a href="" class="youtube"><img src="images/icon/youtube.png" alt=""></a>
+					<a href="" class="icnop"><img src="images/icon/icnop_01.png" alt=""></a>
+					<a href=""><img src="images/icon/ins.png" alt=""></a>
+					<a href=""><img src="images/icon/vk.png" alt=""></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="copyright">
+
+		<p>Copyright @ 2017-2020 hotwish.com. All Rights Reserved 使用本网站即表示接受Hotwish协议。 版权所有 安徽慧场科技有限公司</p>
+		<p>皖公安网备 44010302111111号 皖ICP备08114786号 ICP经营许可证：皖E2-20080329 网络文化经营许可证：皖网文[2017] 1528-299</p>
+		<p>自营主体经营证照 风险监测信息</p>
+	</div>
+	
+</body>
+</html>

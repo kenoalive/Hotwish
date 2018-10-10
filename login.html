@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0; " name="viewport" />
+	<link rel="stylesheet" href="style/reset.css">
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" href="style/login.css">
+	<script src="js/login.js"></script>
+	<title>登录</title>
+</head>
+<body>
+	<!-- 顶部 -->
+	<div class="header">
+		<div class="header-con container">
+			<a href=""><div class="logo"></div></a>
+		</div>
+	</div>
+	<div class="container">
+		<div class="login-img">
+			<img src="images/loginimg.png" alt="">
+		</div>
+		<!-- 登录表单 -->
+		<div class="login-bar">
+			<img src="images/loginwhite.png" alt="">
+			<div class="login-form">
+				<p>如有账号，请登录</p>
+
+				<form action="" method="post">
+					<input type="text" name="username" id="username" placeholder="请输入邮箱">
+					<div class="alert " id="user-alert"></div>
+					<input type="password" name="password" id="password" placeholder="密码">
+					<div class="alert" id="pwd-alert"></div>
+					<input type="submit" value="登录" id="submit">
+					<input type="checkbox" name="checkbox" id="checkbox">
+
+				</form>
+				<div class="check">记住用户名</div>
+				<div class="forget-register">
+					<a href="">忘记密码</a> | <a class="reg" href="">免费注册</a>
+				</div> 
+			</div>
+		</div>
+	</div>
+	
+	
+</body>
+</html>

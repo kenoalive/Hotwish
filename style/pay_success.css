@@ -1,0 +1,42 @@
+.pay-box{
+	width:960px;
+	margin: 0 auto;
+}
+.pay-box .top{
+	display: flex;
+	align-items: center;
+	height: 84px;
+	background-color: #f4f4f4;
+}
+.top-header{
+	height: 46px;
+	width: 960px;
+	background: url(../images/logo2.jpg) no-repeat 20px center;
+	background-color: #262626;
+	background-size: 80px 22px;
+}
+.pay-content{
+	position: relative;
+	width: 960px;
+	height: 280px;
+	background: url(../images/success_03.png) no-repeat 290px center;
+}
+.text1{
+	position: absolute;
+	top: 120px;
+	left: 370px;
+	font-size: 21px;
+	color: #000;
+	letter-spacing: 3px;
+}
+.text1 span{
+	color: #EB4C3F;
+}
+.text2{
+	position: absolute;
+	top: 160px;
+	left:410px;
+	font-size: 16px;
+	letter-spacing: 3px;
+	color: #000;
+}
