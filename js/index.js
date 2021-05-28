@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	$('#login').click(function(){
-		window.location.href = 'www.baidu.com'
+		window.open("http://www.baidu.com");
 	})
 	if(window.screen.width>=1280){
 		$(window).scroll(function() {
